@@ -42,6 +42,8 @@ accelerate_cmd="accelerate launch  main.py \
 
 # Loop over tasks
 for task in "${tasks[@]}"; do
+
+  cmd="$accelerate_cmd"
  
   # Adjust paths based on task name and seed
   save_generations_path="generations/generations_recode_${task}.json"
