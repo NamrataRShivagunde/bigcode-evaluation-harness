@@ -89,11 +89,12 @@ class Evaluator:
 
     def evaluate(self, task_name, intermediate_generations=None):
         task = tasks.get_task(task_name, self.args)
+        print("Got the task successfully!", task)
         if task.requires_execution and not self.allow_code_execution:
             raise ValueError(_WARNING)
 
         generations, references = self.generate_text(task_name, intermediate_generations=intermediate_generations)
-
+        print("generated text successfully!")
         if self.accelerator.is_main_process:
             if not self.args.load_generations_path:
                 save_generations_path = f"{os.path.splitext(self.args.save_generations_path)[0]}_{task_name}.json"
