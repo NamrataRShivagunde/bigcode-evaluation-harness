@@ -37,7 +37,6 @@ accelerate_cmd="accelerate launch  main.py \
   --save_generations \
   --save_references \
   --trust_remote_code \
-  --limit 1 \
 "
 
 # Loop over tasks
@@ -50,7 +49,7 @@ for task in "${tasks[@]}"; do
   metric_output_path="metric_output/metric_${task}.json"
   
   # Append paths to the command
-  cmd+=" --tasks $task --save_generations_path $save_generations_path --metric_output_path $metric_output_path > metric_reco_$task.txt"
+  cmd+=" --tasks $task --save_generations_path $save_generations_path --metric_output_path $metric_output_path > metric_output/recode/metric_recode_$task.txt"
   
   # Run the command
   echo "Running command for task: $task"
