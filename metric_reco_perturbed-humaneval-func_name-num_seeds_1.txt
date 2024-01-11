@@ -1,0 +1,56 @@
+Selected Tasks: ['perturbed-humaneval-func_name-num_seeds_1']
+Loading model in fp32
+Got the task successfully! <bigcode_eval.tasks.recode.create_task.<locals>.PerturbedHumanEval object at 0x7f9ae0e293f0>
+number of problems for this task is 1
+generated text successfully!
+generations were saved at generations/generations_recode_perturbed-humaneval-func_name-num_seeds_1_perturbed-humaneval-func_name-num_seeds_1.json
+references were saved at references_perturbed-humaneval-func_name-num_seeds_1.json
+Evaluating generations...
+{
+  "perturbed-humaneval-func_name-num_seeds_1": {
+    "FuncRenameButterFinger": {
+      "robust-pass-at-1": 1.0,
+      "alt-robust-pass-at-1": 1.0
+    }
+  },
+  "config": {
+    "prefix": "",
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_k": 0,
+    "top_p": 0.95,
+    "n_samples": 1,
+    "eos": "<|endoftext|>",
+    "seed": 0,
+    "model": "microsoft/phi-2",
+    "modeltype": "causal",
+    "peft_model": null,
+    "revision": null,
+    "use_auth_token": false,
+    "trust_remote_code": true,
+    "tasks": "perturbed-humaneval-func_name-num_seeds_1",
+    "instruction_tokens": null,
+    "batch_size": 1,
+    "max_length_generation": 1024,
+    "precision": "fp32",
+    "load_in_8bit": false,
+    "load_in_4bit": false,
+    "limit": 1,
+    "limit_start": 0,
+    "save_every_k_tasks": -1,
+    "postprocess": true,
+    "allow_code_execution": true,
+    "generation_only": false,
+    "load_generations_path": null,
+    "load_data_path": null,
+    "metric_output_path": "metric_output/metric_perturbed-humaneval-func_name-num_seeds_1.json",
+    "save_generations": true,
+    "load_generations_intermediate_paths": null,
+    "save_generations_path": "generations/generations_recode_perturbed-humaneval-func_name-num_seeds_1.json",
+    "save_references": true,
+    "save_references_path": "references.json",
+    "prompt": "prompt",
+    "max_memory_per_gpu": null,
+    "check_references": false
+  }
+}
