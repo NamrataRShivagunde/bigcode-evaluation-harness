@@ -1,3 +1,11 @@
+Selected Tasks: ['perturbed-humaneval-nlaugmenter-num_seeds_1']
+Loading model in fp32
+Got the task successfully! <bigcode_eval.tasks.recode.create_task.<locals>.PerturbedHumanEval object at 0x7ff614440430>
+number of problems for this task is 1640
+generated text successfully!
+generations were saved at generations/generations_recode_perturbed-humaneval-nlaugmenter-num_seeds_1_perturbed-humaneval-nlaugmenter-num_seeds_1.json
+references were saved at references_perturbed-humaneval-nlaugmenter-num_seeds_1.json
+Evaluating generations...
 {
   "perturbed-humaneval-nlaugmenter-num_seeds_1": {
     "BackTranslation": {

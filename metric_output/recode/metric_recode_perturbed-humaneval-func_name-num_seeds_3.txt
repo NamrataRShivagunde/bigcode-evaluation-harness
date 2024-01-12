@@ -1,3 +1,11 @@
+Selected Tasks: ['perturbed-humaneval-func_name-num_seeds_3']
+Loading model in fp32
+Got the task successfully! <bigcode_eval.tasks.recode.create_task.<locals>.PerturbedHumanEval object at 0x7f78293c3b20>
+number of problems for this task is 2624
+generated text successfully!
+generations were saved at generations/generations_recode_perturbed-humaneval-func_name-num_seeds_3_perturbed-humaneval-func_name-num_seeds_3.json
+references were saved at references_perturbed-humaneval-func_name-num_seeds_3.json
+Evaluating generations...
 {
   "perturbed-humaneval-func_name-num_seeds_3": {
     "FuncRenameButterFinger": {

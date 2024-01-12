@@ -1,8 +1,28 @@
 {
   "perturbed-humaneval-format-num_seeds_2": {
     "doc2comments": {
-      "robust-pass-at-1": 1.0,
-      "alt-robust-pass-at-1": 1.0
+      "robust-pass-at-1": 0.5853658536585366,
+      "alt-robust-pass-at-1": 0.5853658536585366
+    },
+    "new_line_aftercode": {
+      "robust-pass-at-1": 0.6646341463414634,
+      "alt-robust-pass-at-1": 0.6646341463414634
+    },
+    "new_line_afterdoc": {
+      "robust-pass-at-1": 0.6646341463414634,
+      "alt-robust-pass-at-1": 0.6646341463414634
+    },
+    "new_lines": {
+      "robust-pass-at-1": 0.6097560975609756,
+      "alt-robust-pass-at-1": 0.6097560975609756
+    },
+    "split_lines": {
+      "robust-pass-at-1": 0.5670731707317073,
+      "alt-robust-pass-at-1": 0.5670731707317073
+    },
+    "tab_indent": {
+      "robust-pass-at-1": 0.6951219512195121,
+      "alt-robust-pass-at-1": 0.6951219512195121
     }
   },
   "config": {
@@ -27,7 +47,7 @@
     "precision": "fp32",
     "load_in_8bit": false,
     "load_in_4bit": false,
-    "limit": 1,
+    "limit": null,
     "limit_start": 0,
     "save_every_k_tasks": -1,
     "postprocess": true,

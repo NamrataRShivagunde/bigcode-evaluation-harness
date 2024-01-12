@@ -1,8 +1,32 @@
 {
   "perturbed-humaneval-natgen-num_seeds_4": {
     "DeadCodeInserterLast": {
-      "robust-pass-at-1": 1.0,
-      "alt-robust-pass-at-1": 1.0
+      "robust-pass-at-1": 0.35365853658536583,
+      "alt-robust-pass-at-1": 0.35365853658536583
+    },
+    "DeadCodeInserter": {
+      "robust-pass-at-1": 0.21951219512195122,
+      "alt-robust-pass-at-1": 0.21951219512195122
+    },
+    "ForWhileTransformer": {
+      "robust-pass-at-1": 0.6097560975609756,
+      "alt-robust-pass-at-1": 0.6097560975609756
+    },
+    "OperandSwap": {
+      "robust-pass-at-1": 0.6524390243902439,
+      "alt-robust-pass-at-1": 0.6524390243902439
+    },
+    "VarRenamerCB": {
+      "robust-pass-at-1": 0.6524390243902439,
+      "alt-robust-pass-at-1": 0.6524390243902439
+    },
+    "VarRenamerNaive": {
+      "robust-pass-at-1": 0.6158536585365854,
+      "alt-robust-pass-at-1": 0.6158536585365854
+    },
+    "VarRenamerRN": {
+      "robust-pass-at-1": 0.5121951219512195,
+      "alt-robust-pass-at-1": 0.5121951219512195
     }
   },
   "config": {
@@ -27,7 +51,7 @@
     "precision": "fp32",
     "load_in_8bit": false,
     "load_in_4bit": false,
-    "limit": 1,
+    "limit": null,
     "limit_start": 0,
     "save_every_k_tasks": -1,
     "postprocess": true,
